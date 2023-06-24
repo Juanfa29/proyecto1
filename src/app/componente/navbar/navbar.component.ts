@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  
+  titulo: string;
+  texto: string;
+  boton: string;
+  constructor(){
+    this.titulo = "Tarea"; 
+    this.texto = "Prueba Angular";
+    this.boton = "Usuario";               
+  }
+  cambiarNombre(){
+    this.boton = "Facu"
+  }
+
 
 }
